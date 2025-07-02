@@ -1,0 +1,198 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8faf8;
+  color: #090909;
+}
+
+/* Parallax Section */
+.parallax {
+  background: url("/static/medicine-doctor-holding-red-heart-shape-in-hand-with-medical-icon-network-connection-modern-virtual-screen-interface-service-mind-and-medical-technology-network-concept-photo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(207, 240, 72);
+  text-align: center;
+  text-shadow: 0 0 8px black;
+  position: relative;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.parallax .container {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styling */
+.section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom right, #f9f9f9, #e9f5ff);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed #007bff;
+  border-radius: 12px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1, h2, h4 {
+  color: #0056b3;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(167, 167, 167);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+/* Buttons */
+.custom-btn {
+  background-color: #007bff;
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.custom-btn:hover, .custom-btn:focus {
+  background-color: #0056b3;
+  color: #fff !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  transform: translateY(-3px);
+}
+
+.custom-btn:active {
+  background-color: #003d80;
+  color: #fff !important;
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #343a40;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Highlight the Home button with blue color */
+.navbar-nav .nav-link[href="/"] {
+  color: #007bff !important; /* Blue color */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link[href="/"]:hover {
+  color: #0056b3 !important; /* Darker blue on hover */
+  text-decoration: underline;
+}
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #e9ecef;
+  color: #6c757d;
+  font-size: 0.9rem;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Cards for Features */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #495057;
+}
+
+/* General Animations */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

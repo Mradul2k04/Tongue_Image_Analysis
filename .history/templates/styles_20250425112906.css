@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .parallax {
+    background: url("/static/image.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 8px black;
+  }
+  
+  .section {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom right, #f9f9f9, #e9f5ff);
+  }
+  
+  .upload-box {
+    border: 2px dashed #007bff;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h4 {
+    color: #0056b3;
+  }
+  
